@@ -1,4 +1,4 @@
-# Estrutura inicial do projeto
+# Sistema de Média do Aluno - Versão 2.0
 print("--- Sistema de Média do Aluno ---")
 
 
