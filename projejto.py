@@ -1,14 +1,24 @@
-# Sistema de Média do Aluno - Versão 2.0
+# Sistema de Média do Aluno - Versão Final
+
 print("--- Sistema de Média do Aluno ---")
 
-
+# Entrada de dados
+nome = input("Digite o nome do aluno: ")
 nota1 = float(input("Digite a primeira nota: "))
 nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
 
-media = (nota1 + nota2) / 2
+# Processamento
+media = (nota1 + nota2 + nota3) / 3
 
-print("A média do aluno foi de: ", media)
+
+print(f"\nAluno: {nome}")
+print(f"A média do aluno foi de: {media:.2f}")
+
+#Saída de dados
 if media >= 7.0:
-    print("Aluno aprovado!")
+    print("Status: Aluno APROVADO! 🎉")
+elif media >= 5.0:
+    print("Status: Aluno em RECUPERAÇÃO! ⚠️")
 else:
-    print("Aluno reprovado!")
+    print("Status: Aluno REPROVADO! ❌")
